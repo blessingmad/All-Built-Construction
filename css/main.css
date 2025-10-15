@@ -53,6 +53,11 @@ body {
 
 .order-button:hover {
   box-shadow: 2px 2px 4px #000000;
+  cursor: pointer;
+}
+
+.search-button {
+  cursor: pointer;
 }
 
 .mobile-nav {
@@ -93,6 +98,12 @@ body {
   color: #ffffff;
 }
 
+.mission h1 {
+  text-align: center;
+  color: #8241b4;
+}
+
+/* For tablets */
 @media (max-width: 1024px) {
   .extras {
     display: none;
@@ -107,6 +118,7 @@ body {
   }
 }
 
+/* For mobile phones */
 @media (max-width: 668px) {
   .page-sections {
     display: none;
