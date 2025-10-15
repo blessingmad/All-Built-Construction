@@ -16,15 +16,14 @@
   <body>
     <div class="nav">
       <div class="company-name">All Build Construction</div>
-      <!-- <div class="menu"> -->
       <div class="page-sections">
-        <div>HOME</div>
-        <div>ABOUT</div>
-        <div>PROJECTS</div>
-        <div>CONTACTS</div>
+        <a href=""><div>HOME</div></a>
+        <a href=""><div>ABOUT</div></a>
+        <a href=""><div>PROJECTS</div></a>
+        <a href=""><div>CONTACTS</div></a>
       </div>
 
-      <div class="hambburger">&#9776;</div>
+      <div class="hambburger" id="hambburger-btn">&#9776;</div>
 
       <div class="extras">
         <input
@@ -37,7 +36,20 @@
         <div class="search-button" id="search-button">🔍︎</div>
         <div class="order-button">ORDER NOW</div>
       </div>
-      <!-- </div> -->
+    </div>
+
+    <!-- Navigation bar for mobile -->
+    <div id="mobile-nav" class="mobile-nav">
+      <a href="javascript:void(0)" class="close-button" id="close-button"
+        >&times</a
+      >
+
+      <div class="mobile-menu">
+        <a href=""><div>HOME</div></a>
+        <a href=""><div>ABOUT</div></a>
+        <a href=""><div>PROJECTS</div></a>
+        <a href=""><div>CONTACTS</div></a>
+      </div>
     </div>
     <script src="js/main.js"></script>
   </body>

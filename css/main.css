@@ -26,6 +26,11 @@ body {
   gap: 20px;
 }
 
+.page-sections a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .extras {
   display: flex;
   gap: 20px;
@@ -49,6 +54,10 @@ body {
   box-shadow: 2px 2px 4px #000000;
 }
 
+.mobile-nav {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .extras {
     display: none;
@@ -63,5 +72,51 @@ body {
   .hambburger {
     display: block;
     font-weight: bold;
+  }
+
+  /* For mobile navigation bar */
+  .mobile-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+    padding-left: 0px;
+    /* background-color: black; */
+    /* overflow-x: hidden; */
+    /* transition: 0.5s; */
+  }
+
+  .mobile-menu {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+
+  .mobile-menu a {
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 26px;
+    /* color: var(--primary-orange-color); */
+    display: block;
+    transition: 0.3s;
+  }
+
+  .mobile-menu a:hover {
+    color: grey;
+  }
+
+  .mobile-nav .close-button {
+    position: absolute;
+    top: 50px;
+    /* right: 15px; */
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
   }
 }
