@@ -1,0 +1,67 @@
+:root {
+  --primary-orange-color: #ff8c42;
+  --primary-purple-color: ;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+/*For the nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-orange-color);
+}
+
+.page-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.extras {
+  display: flex;
+  gap: 20px;
+}
+
+.hambburger {
+  display: none;
+}
+
+.search-input {
+  display: none;
+}
+
+.order-button {
+  background-color: var(--primary-orange-color);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.order-button:hover {
+  box-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width: 1024px) {
+  .extras {
+    display: none;
+  }
+}
+
+@media (max-width: 668px) {
+  .page-sections {
+    display: none;
+  }
+
+  .hambburger {
+    display: block;
+    font-weight: bold;
+  }
+}
