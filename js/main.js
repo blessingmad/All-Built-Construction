@@ -23,9 +23,11 @@ window.addEventListener("resize", function () {
 });
 
 hambburger_btn.addEventListener("click", function () {
+  mobile_nav.style.width = "100% ";
   mobile_nav.style.display = "block";
 });
 
 close_btn.addEventListener("click", function () {
+  mobile_nav.style.width = "0 ";
   mobile_nav.style.display = "none";
 });
