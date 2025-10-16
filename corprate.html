@@ -25,6 +25,46 @@
 
         </div>
       </div>
+
+      <!-- Navigation -->
+      <div class="nav-wrap">
+        <div class="container nav-container">
+          <a class="logo" href="#">
+            <div class="logo-mark" aria-hidden="true">AB</div>
+            <div class="logo-text">
+              <div class="company">All Build</div>
+              <div class="tag">Construction</div>
+            </div>
+          </a>
+
+          <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+          <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </label>
+
+          <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="housing.html">Housing</a></li>
+              <li><a href="roads.html">Roads</a></li>
+              <li><a href="security-walls.html">Security Walls</a></li>
+              <li><a href="industrial.html">Industrial</a></li>
+              <li><a href="corprate.html">Corporate</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <div class="nav-cta">
+            <a class="phone" href="tel:+27610734387">061 073 4387</a>
+            <a class="btn primary" href="#get-quote">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Optional live time -->
+    <div id="time">
+      <time></time>
     </div>
 
     <!-- Main nav area -->
@@ -75,40 +115,16 @@
       <section class="projects">
         <h2>Featured Projects</h2>
         <div class="project-gallery">
-          <img
-            src="images/FB_IMG_17604761898776066.jpg"
-            alt="industrial Project 1"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/FB_IMG_17606186099553455.jpg"
-            alt="Road Project 2"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/FB_IMG_17606184775409902.jpg"
-            alt="Road Project 3"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/Free Construction Planning Session Image _ Download at StockCake.jpg"
-            alt="Road Project 3"
-            width="300"
-            height="300"
-          />
+          <img src="images/FB_IMG_17604761898776066.jpg" alt="Industrial Project 1" width="300" height="300">
+          <img src="images/FB_IMG_17606186099553455.jpg" alt="Project 2" width="300" height="300">
+          <img src="images/FB_IMG_17606184775409902.jpg" alt="Project 3" width="300" height="300">
+          <img src="images/Free Construction Planning Session Image _ Download at StockCake.jpg" alt="Project 4" width="300" height="300">
         </div>
       </section>
 
       <section class="services-overview">
         <h2>Corporate Buildings Services</h2>
-        <p>
-          At All Build Construction, we specialize in delivering high-quality
-          corporate buildings that meet the needs of modern businesses. Our
-          services include:
-        </p>
+        <p>At All Build Construction, we specialize in delivering high-quality corporate buildings that meet the needs of modern businesses. Our services include:</p>
         <ul>
           <li>Office Block Construction</li>
           <li>Tenant Installation (TI)</li>
@@ -119,15 +135,12 @@
       <section class="lead-capture">
         <div class="quote-card quote-card--orange">
           <h2>Request a Quote</h2>
-          <form
-            action="https://formspree.io/f/{your-form-endpoint}"
-            method="POST"
-          >
+          <form action="https://formspree.io/f/{your-form-endpoint}" method="POST">
             <label for="name">Full Name *</label>
-            <input type="text" id="name" name="name" required />
+            <input type="text" id="name" name="name" required>
 
             <label for="email">Email *</label>
-            <input type="email" id="email" name="email" required />
+            <input type="email" id="email" name="email" required>
 
             <label for="message">Project Details *</label>
             <textarea id="message" name="message" required></textarea>
@@ -138,19 +151,14 @@
       </section>
     </main>
 
-    <!-- ===== FOOTER SECTION ===== -->
+    <!-- ===== FOOTER ===== -->
     <footer class="footer">
       <div class="footer-container">
-        <!-- COMPANY INFO -->
         <div class="footer-section">
           <h2>All Build <span>Construction</span></h2>
-          <p>
-            Professional construction services for residential, commercial, and
-            industrial projects across South Africa.
-          </p>
+          <p>Modern office and corporate structures designed for business excellence</p>
         </div>
 
-        <!-- QUICK LINKS -->
         <div class="footer-section">
           <h3>Quick Links</h3>
           <ul>
@@ -159,17 +167,12 @@
             <li><a href="contact.html">Get a Quote</a></li>
             <li><a href="security-walls.html">Security Walls</a></li>
             <li><a href="road-construction.html">Road Construction</a></li>
-            <li>
-              <a href="housing-construction.html">Housing Construction</a>
-            </li>
-            <li>
-              <a href="industrial-structures.html">Industrial Structures</a>
-            </li>
+            <li><a href="housing-construction.html">Housing Construction</a></li>
+            <li><a href="industrial-structures.html">Industrial Structures</a></li>
             <li><a href="corporate-buildings.html">Corporate Buildings</a></li>
           </ul>
         </div>
 
-        <!-- SERVICES -->
         <div class="footer-section">
           <h3>Our Services</h3>
           <ul>
@@ -181,36 +184,19 @@
           </ul>
         </div>
 
-        <!-- CONTACT INFO -->
         <div class="footer-section">
           <h3>Contact Us</h3>
           <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
-          <p>
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a>
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:admin@allbuildconstruction.co.za"
-              >admin@allbuildconstruction.co.za</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street,
-            Pretoria Central,<br />
-            Gauteng, South Africa
-          </p>
+          <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a></p>
+          <p><i class="fas fa-envelope"></i> <a href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street, Pretoria Central, Gauteng, South Africa</p>
         </div>
       </div>
 
-      <!-- COPYRIGHT BAR -->
       <div class="footer-bottom">
         <p>&copy; 2025 All Build Construction | All rights reserved.</p>
         <div>
-          <p>
-            This site was designed and is maintained by Daimond Pinnacle IT
-            Solutions.
-          </p>
+          <p>This site was designed and is maintained by Daimond Pinnacle IT Solutions.</p>
         </div>
       </div>
     </footer>

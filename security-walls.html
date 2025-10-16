@@ -154,212 +154,207 @@
       </div>
     </div>
 
-    <!-- Main Content -->
-    <main>
-      <section class="overview">
-        <h2>Overview</h2>
-        <p>
-          Security is paramount. We build high-grade perimeter defenses for
-          commercial properties, residential estates, and industrial complexes.
-          Our solutions include solid boundary walls, electrified fencing, and
-          security gate installations.
-        </p>
-      </section>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/584509c2ad.js" crossorigin="anonymous"></script>
 
-      <section class="projects">
-        <h2>Featured Projects</h2>
-        <div class="project-gallery">
-          <img
-            src="images/FB_IMG_17605217140124763.jpg"
-            alt="Security Project 1"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/security-wall.jpg"
-            alt="R Project 2"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/FB_IMG_17605217140124763.jpg"
-            alt="Road Project 3"
-            width="300"
-            height="300"
-          />
-          <img
-            src="images/FB_IMG_17605217802185555.jpg"
-            alt="Road project 4"
-            width="300"
-            height="300"
-          />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <!-- ===== SITE HEADER ===== -->
+  <header class="site-header" role="banner">
+    <!-- Top strip -->
+    <div class="top-strip">
+      <div class="container">
+        <div class="top-left">
+          <span class="brand-ab">AB</span>
+          <span class="brand-name">All Build Construction</span>
         </div>
-      </section>
-
-      <section class="capabilities">
-        <h2>Our Capabilities</h2>
-        <ul>
-          <li>
-            <strong>Concrete Boundary Walls:</strong> Thick, reinforced concrete
-            walls for maximum security.
-          </li>
-          <li>
-            <strong>Electrified Fencing:</strong> Installation and certification
-            of high-voltage perimeter fences.
-          </li>
-          <li>
-            <strong>Access Control:</strong> Integration of automated gates,
-            turnstiles, and biometric access points.
-          </li>
-        </ul>
-      </section>
-
-      <section class="process">
-        <h2>Typical Process</h2>
-        <p>
-          <span class="step">Security Audit & Design</span
-          ><span>
-            <i class="fa-solid fa-arrow-right" style="color: #2b004d"></i>
-          </span>
-          <span class="step">Foundation Laying</span
-          ><span>
-            <i class="fa-solid fa-arrow-right" style="color: #2b004d"></i>
-          </span>
-          <span class="step">Wall Erection</span
-          ><span>
-            <i class="fa-solid fa-arrow-right" style="color: #2b004d"></i>
-          </span>
-          <span class="step">Security Integration</span>
-        </p>
-        <!-- <ol>
-          <li>Security Audit & Design</li>
-          <i class="fa-solid fa-arrow-down" style="color: #2d004d"></i>
-          <li>Foundation Laying</li>
-          <i class="fa-solid fa-arrow-down" style="color: #2d004d"></i>
-          <li>Wall Erection</li>
-          <i class="fa-solid fa-arrow-down" style="color: #2d004d"></i>
-
-          <li>Security Integration</li>
-        </ol> -->
-      </section>
-
-      <!-- Contact Form  -->
-      <section class="contact-form max-w-2xl mx-auto">
-        <div class="quote-card quote-card--orange">
-          <h2 class="font-extrabold text-center">Request a Quote</h2>
-          <form
-            action="https://formspree.io/f/{your-form-endpoint}"
-            method="POST"
-            class="mt-8"
-          >
-            <label for="name">Full Name *</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              required
-              placeholder="John Doe"
-            />
-
-            <label for="email">Email *</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              required
-              placeholder="john.doe@example.com"
-            />
-
-            <label for="message">Project Details *</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              required
-              placeholder="Describe your project details..."
-            ></textarea>
-
-            <button type="submit">Submit Enquiry</button>
-          </form>
+        <div class="top-right">
+          <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
+          <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
+          <a href="https://wa.me/27610734387" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
         </div>
-      </section>
-    </main>
+      </div>
+    </div>
 
-    <!-- ===== FOOTER SECTION ===== -->
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- COMPANY INFO -->
-        <div class="footer-section">
-          <h2>All Build <span>Construction</span></h2>
-          <p>
-            Professional construction services for residential, commercial, and
-            industrial projects across South Africa.
-          </p>
-        </div>
+    <!-- Main Navigation -->
+    <div class="nav-wrap">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a class="logo" href="index.html">
+          <div class="logo-mark" aria-hidden="true">AB</div>
+          <div class="logo-text">
+            <div class="company">All Build</div>
+            <div class="tag">Construction</div>
+          </div>
+        </a>
 
-        <!-- QUICK LINKS -->
-        <div class="footer-section">
-          <h3>Quick Links</h3>
+        <!-- Mobile menu toggle -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <!-- Nav Links -->
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="contact.html">Get a Quote</a></li>
-            <li><a href="security-walls.html">Security Walls</a></li>
-            <li><a href="road-construction.html">Road Construction</a></li>
-            <li>
-              <a href="housing-construction.html">Housing Construction</a>
-            </li>
-            <li>
-              <a href="industrial-structures.html">Industrial Structures</a>
-            </li>
-            <li><a href="corporate-buildings.html">Corporate Buildings</a></li>
+            <li><a href="housing.html">Housing</a></li>
+            <li><a href="roads.html">Roads</a></li>
+            <li><a href="security-walls.html" class="active">Security Walls</a></li>
+            <li><a href="industrial.html">Industrial</a></li>
+            <li><a href="corprate.html">Corporate</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
-        </div>
+        </nav>
 
-        <!-- SERVICES -->
-        <div class="footer-section">
-          <h3>Our Services</h3>
-          <ul>
-            <li><a href="housing.html">Housing Construction</a></li>
-            <li><a href="roads.html">Road Construction</a></li>
-            <li><a href="security-walls.html">Security Walls</a></li>
-            <li><a href="industrial.html">Industrial Structures</a></li>
-            <li><a href="corprate.html">Corporate Buildings</a></li>
-          </ul>
-        </div>
-
-        <!-- CONTACT INFO -->
-        <div class="footer-section">
-          <h3>Contact Us</h3>
-          <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
-          <p>
-            <i class="fab fa-whatsapp"></i>
-            <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a>
-          </p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            <a href="mailto:admin@allbuildconstruction.co.za"
-              >admin@allbuildconstruction.co.za</a
-            >
-          </p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street,
-            Pretoria Central,<br />
-            Gauteng, South Africa
-          </p>
+        <!-- CTA Buttons -->
+        <div class="nav-cta">
+          <a class="phone" href="tel:+27610734387">061 073 4387</a>
+          <a class="btn primary" href="#quote-form">Get Quote</a>
         </div>
       </div>
+    </div>
+  </header>
 
-      <!-- COPYRIGHT BAR -->
-      <div class="footer-bottom">
-        <p>&copy; 2025 All Build Construction | All rights reserved.</p>
-        <div>
-          <p>
-            This site was designed and is maintained by Daimond Pinnacle IT
-            Solutions.
-          </p>
-        </div>
+  <!-- ===== TIME SECTION ===== -->
+  <div id="time">
+    <time></time>
+  </div>
+
+  <!-- ===== HERO SECTION ===== -->
+  <div class="services-hero security-hero">
+    <div class="hero-overlay"></div>
+    <div class="services-hero-text">
+      <h1>Security Walls</h1>
+      <p>Durable security walls and perimeter fencing for complete property protection</p>
+    </div>
+  </div>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <!-- Overview -->
+    <section class="overview">
+      <h2>Overview</h2>
+      <p>
+        Security is paramount. We build high-grade perimeter defenses for
+        commercial properties, residential estates, and industrial complexes.
+        Our solutions include solid boundary walls, electrified fencing, and
+        security gate installations.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-gallery">
+        <img src="images/FB_IMG_17605217140124763.jpg" alt="Security Project 1" width="300" height="300">
+        <img src="images/security-wall.jpg" alt="Security Project 2" width="300" height="300">
+        <img src="images/FB_IMG_17605217140124763.jpg" alt="Security Project 3" width="300" height="300">
+        <img src="images/FB_IMG_17605217802185555.jpg" alt="Security Project 4" width="300" height="300">
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="capabilities">
+      <h2>Our Capabilities</h2>
+      <ul>
+        <li><strong>Concrete Boundary Walls:</strong> Thick, reinforced concrete walls for maximum security.</li>
+        <li><strong>Electrified Fencing:</strong> Installation and certification of high-voltage perimeter fences.</li>
+        <li><strong>Access Control:</strong> Integration of automated gates, turnstiles, and biometric access points.</li>
+      </ul>
+    </section>
+
+    <!-- Process -->
+    <section class="process">
+      <h2>Typical Process</h2>
+      <p>
+        <span class="step">Security Audit & Design</span>
+        <i class="fa-solid fa-arrow-right" style="color:#2b004d;"></i>
+        <span class="step">Foundation Laying</span>
+        <i class="fa-solid fa-arrow-right" style="color:#2b004d;"></i>
+        <span class="step">Wall Erection</span>
+        <i class="fa-solid fa-arrow-right" style="color:#2b004d;"></i>
+        <span class="step">Security Integration</span>
+      </p>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="contact-form max-w-2xl mx-auto" id="quote-form">
+      <div class="quote-card quote-card--orange">
+        <h2 class="text-center">Request a Quote</h2>
+        <form action="https://formspree.io/f/{your-form-endpoint}" method="POST">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required placeholder="John Doe">
+
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="john.doe@example.com">
+
+          <label for="message">Project Details *</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Describe your project details..."></textarea>
+
+          <button type="submit">Submit Enquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h2>All Build <span>Construction</span></h2>
+        <p>
+          Professional construction services for residential, commercial, and
+          industrial projects across South Africa.
+        </p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#quote-form">Get a Quote</a></li>
+          <li><a href="security-walls.html">Security Walls</a></li>
+          <li><a href="roads.html">Road Construction</a></li>
+          <li><a href="housing.html">Housing Construction</a></li>
+          <li><a href="industrial.html">Industrial Structures</a></li>
+          <li><a href="corprate.html">Corporate Buildings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Our Services</h3>
+        <ul>
+          <li><a href="housing.html">Housing Construction</a></li>
+          <li><a href="roads.html">Road Construction</a></li>
+          <li><a href="security-walls.html">Security Walls</a></li>
+          <li><a href="industrial.html">Industrial Structures</a></li>
+          <li><a href="corprate.html">Corporate Buildings</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
+        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a></p>
+        <p><i class="fas fa-envelope"></i> <a href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a></p>
+        <p><i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street, Pretoria Central,<br> Gauteng, South Africa</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 All Build Construction | All rights reserved.</p>
+      <p>This site was designed and is maintained by Diamond Pinnacle IT Solutions.</p>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+</body>
 </html>
