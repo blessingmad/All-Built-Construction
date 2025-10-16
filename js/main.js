@@ -31,3 +31,5 @@ close_btn.addEventListener("click", function () {
   mobile_nav.style.width = "0 ";
   mobile_nav.style.display = "none";
 });
+// Auto-update the current year
+document.getElementById("year").textContent = new Date().getFullYear();
