@@ -1,6 +1,6 @@
 :root {
   --primary-orange-color: #ff8c42;
-  --primary-purple-color: ;
+  --primary-purple-color: #5b2b8a;
 }
 
 body {
@@ -139,6 +139,7 @@ section h1 {
 }
 
 .service a {
+  height: 50px;
   text-decoration: none;
   color: inherit;
   text-align: center;
@@ -280,6 +281,62 @@ section h1 {
   background-size: cover;
 }
 
+/* Services pages */
+
+main {
+  margin: 10px;
+}
+
+main section {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+section h2 {
+  text-align: center;
+  color: var(--primary-orange-color);
+  font-size: 40px;
+}
+
+section p,
+section ul {
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+}
+
+.projects {
+  margin: 0 auto;
+  padding-left: 70px;
+}
+
+.projects img {
+  border-radius: 10px;
+}
+
+.step {
+  border: 1px solid var(--primary-purple-color);
+  padding: 10px;
+  background-color: var(--primary-purple-color);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.process p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.process p span {
+  flex: 1 1 auto; /* allows shrinking and wrapping */
+}
+
 /* For tablets */
 @media (max-width: 1024px) {
   .extras {
@@ -308,6 +365,11 @@ section h1 {
 
   .card .message {
     padding-top: 50px;
+  }
+
+  .projects {
+    margin: 0 auto;
+    padding-left: 30px;
   }
 }
 
