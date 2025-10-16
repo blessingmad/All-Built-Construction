@@ -1,3 +1,346 @@
+:root {
+  --primary-orange-color: #ff8c42;
+  --primary-purple-color: ;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0;
+}
+
+/*For the nav */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.company-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-orange-color);
+}
+
+.page-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.page-sections a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.extras {
+  display: flex;
+  gap: 20px;
+}
+
+.hambburger {
+  display: none;
+}
+
+.search-input {
+  display: none;
+}
+
+.order-button {
+  background-color: var(--primary-orange-color);
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.order-button:hover {
+  box-shadow: 2px 2px 4px #000000;
+  cursor: pointer;
+}
+
+.search-button {
+  cursor: pointer;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* Hero */
+.hero {
+  background-image: url("../images/Free\ Construction\ Planning\ Session\ Image\ _\ Download\ at\ StockCake.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 450px;
+  width: 100%;
+  margin: 0;
+  background-color: #000000;
+}
+
+.hero-text {
+  color: #ffffff;
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 100px;
+  width: 80%;
+}
+
+.learn-more-btn {
+  background-color: #ffffff;
+  color: #000000;
+  width: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.learn-more-btn:hover {
+  background-color: rgb(0, 0, 0, 0.3);
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.mission h1 {
+  text-align: center;
+  color: #8241b4;
+  padding: 50px;
+  box-shadow: 2px 2px 4px #000000;
+}
+
+/* Services */
+
+.our-services {
+  padding: 50px;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+section h1 {
+  color: var(--primary-orange-color);
+  text-align: center;
+}
+
+.service {
+  width: 400px;
+  height: auto;
+  display: grid;
+}
+
+.service img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.service h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.service a {
+  text-decoration: none;
+  color: inherit;
+  text-align: center;
+  padding-top: 0;
+}
+
+.service a:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.all-services {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+/* Why choose Us section */
+.all-reasons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.reason {
+  margin-top: 10px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.reason h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.reason p {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0;
+}
+
+/* Testimonials */
+.card {
+  width: 80%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  /* gap: 10px; */
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.image {
+  height: 300px;
+  width: 250px;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+  left: 0;
+  padding-left: 200px;
+}
+
+.card .message {
+  padding-top: 100px;
+}
+
+/* For tablets */
+@media (max-width: 1024px) {
+  .extras {
+    display: none;
+  }
+
+  .hero-text {
+    padding-top: 50px;
+  }
+
+  .hero-text p {
+    width: 500px;
+  }
+
+  .service {
+    width: 300px;
+  }
+
+  .all-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image img {
+    padding-left: 0px;
+  }
+
+  .card .message {
+    padding-top: 50px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 668px) {
+  .page-sections {
+    display: none;
+  }
+
+  .hambburger {
+    display: block;
+    font-weight: bold;
+  }
+
+  /* For mobile navigation bar */
+  .mobile-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 20px;
+    padding-left: 0px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    /* transition: 0.5s; */
+  }
+
+  .mobile-menu {
+    position: relative;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    /* margin-top: 10px; */
+  }
+
+  .mobile-menu a {
+    padding: 8px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 26px;
+    /* color: var(--primary-orange-color); */
+    display: block;
+    transition: 0.3s;
+  }
+
+  .mobile-menu a:hover {
+    color: grey;
+  }
+
+  .mobile-nav .close-button {
+    position: absolute;
+    top: 50px;
+    /* right: 15px; */
+    font-size: 40px;
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero {
+    height: auto;
+  }
+
+  .hero-text p {
+    width: 300px;
+  }
+
+  .hero-text {
+    padding-top: 10px;
+  }
+
+  .all-services {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reason {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .card {
+    /* width: 100%; */
+    height: auto;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    padding-bottom: 50px;
+  }
+
+  .image {
+    display: none;
+  }
+}
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
