@@ -109,12 +109,14 @@ body {
 
 .our-services {
   padding: 50px;
+}
+
+section {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-.our-services h1,
-.why-choose-us h1 {
+section h1 {
   color: var(--primary-orange-color);
   text-align: center;
 }
@@ -186,6 +188,36 @@ body {
   margin-top: 0;
 }
 
+/* Testimonials */
+.card {
+  width: 80%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 0 auto;
+  /* gap: 10px; */
+  padding-bottom: 200px;
+  overflow: hidden;
+}
+
+.image {
+  height: 300px;
+  width: 250px;
+}
+
+.image img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 30%;
+  left: 0;
+  padding-left: 200px;
+}
+
+.card .message {
+  padding-top: 100px;
+}
+
 /* For tablets */
 @media (max-width: 1024px) {
   .extras {
@@ -206,6 +238,14 @@ body {
 
   .all-services {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .image img {
+    padding-left: 0px;
+  }
+
+  .card .message {
+    padding-top: 50px;
   }
 }
 
@@ -287,5 +327,17 @@ body {
   .reason {
     width: 300px;
     margin: 0 auto;
+  }
+
+  .card {
+    /* width: 100%; */
+    height: auto;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    padding-bottom: 50px;
+  }
+
+  .image {
+    display: none;
   }
 }
