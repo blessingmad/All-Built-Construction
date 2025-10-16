@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #2b004d;
+  color: #fff;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.footer-section h2 span {
+  color: #ffcc00;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #ffcc00;
+  display: inline-block;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.8;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-section p i {
+  margin-right: 8px;
+  color: #ffcc00;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+/* ===== COPYRIGHT BAR ===== */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+  padding-top: 15px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 15px 15px;
+  }
+
+  .footer-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .footer-section h3 {
+    font-size: 1.1rem;
+  }
+}
+  
