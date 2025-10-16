@@ -1,6 +1,6 @@
 :root {
   --primary-orange-color: #ff8c42;
-  --primary-purple-color: ;
+  --primary-purple-color: #5b2b8a;
 }
 
 body {
@@ -139,6 +139,7 @@ section h1 {
 }
 
 .service a {
+  height: 50px;
   text-decoration: none;
   color: inherit;
   text-align: center;
@@ -218,7 +219,123 @@ section h1 {
   padding-top: 100px;
 }
 
+.services-hero {
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
 
+.services-hero h1 {
+  text-align: center;
+  font-size: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.services-hero p {
+  text-align: center;
+  margin-top: 0;
+  margin-top: 0;
+}
+
+.services-hero-text {
+  padding-top: 200px;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.housing-hero {
+  background-image: url("../images/Housing-construction.jpg");
+}
+
+.industrial-hero {
+  background-image: url("../images/Industrial-construction.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.corporate-hero {
+  background-image: url("../images/corporate-construction.jpg");
+}
+
+.roads-hero {
+  background-image: url("../images/road-construction.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.security-hero {
+  background-image: url("../images/security-wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Services pages */
+
+main {
+  margin: 10px;
+}
+
+main section {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+section h2 {
+  text-align: center;
+  color: var(--primary-orange-color);
+  font-size: 40px;
+}
+
+section p,
+section ul {
+  text-align: center;
+}
+
+section ul {
+  list-style: none;
+}
+
+.projects {
+  margin: 0 auto;
+  padding-left: 70px;
+}
+
+.projects img {
+  border-radius: 10px;
+}
+
+.step {
+  border: 1px solid var(--primary-purple-color);
+  padding: 10px;
+  background-color: var(--primary-purple-color);
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.process p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.process p span {
+  flex: 1 1 auto; /* allows shrinking and wrapping */
+}
 
 /* For tablets */
 @media (max-width: 1024px) {
@@ -248,6 +365,11 @@ section h1 {
 
   .card .message {
     padding-top: 50px;
+  }
+
+  .projects {
+    margin: 0 auto;
+    padding-left: 30px;
   }
 }
 
@@ -349,65 +471,64 @@ body {
 }
 
 /* --- Quote Card Styling (The requested orange section) --- */
-        .quote-card {
-            padding: 2.5rem;
-            border-radius: 1rem;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-            transition: all 0.3s ease;
-        }
-        
-        .quote-card--orange {
-            background-color: #fff;
-            border: 3px solid #FF7A00; /* Orange Border */
-        }
-        .quote-card--orange h2 {
-            color: #1f2937;
-            margin-bottom: 1.5rem;
-            font-size: 2.5rem; /* text-4xl */
-        }
-        .quote-card--orange label {
-            display: block;
-            margin-top: 1rem;
-            margin-bottom: 0.25rem;
-            font-weight: 600;
-            color: #4b5563;
-        }
-        .quote-card--orange input[type="text"], 
-        .quote-card--orange input[type="email"], 
-        .quote-card--orange textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            transition: border-color 0.3s, box-shadow 0.3s;
-            outline: none;
-        }
-        /* Orange focus style for inputs/textarea */
-        .quote-card--orange input:focus, 
-        .quote-card--orange textarea:focus {
-            border-color: #FF7A00; 
-            box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25); /* Orange glow effect */
-        }
-        /* Orange submit button */
-        .quote-card--orange button[type="submit"] {
-            margin-top: 2rem;
-            width: 100%;
-            padding: 1rem;
-            background-color: #FF7A00; /* Primary Orange */
-            color: white;
-            font-weight: 700;
-            border: none;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.1s;
-        }
-        .quote-card--orange button[type="submit"]:hover {
-            background-color: #E66F00; /* Slightly darker orange on hover */
-            transform: translateY(-2px);
-            box-shadow: 0 4px 6px rgba(255, 122, 0, 0.4);
-        }
-        
+.quote-card {
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
 
+.quote-card--orange {
+  background-color: #fff;
+  border: 3px solid #ff7a00; /* Orange Border */
+}
+.quote-card--orange h2 {
+  color: #1f2937;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem; /* text-4xl */
+}
+.quote-card--orange label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+  color: #4b5563;
+}
+.quote-card--orange input[type="text"],
+.quote-card--orange input[type="email"],
+.quote-card--orange textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+}
+/* Orange focus style for inputs/textarea */
+.quote-card--orange input:focus,
+.quote-card--orange textarea:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25); /* Orange glow effect */
+}
+/* Orange submit button */
+.quote-card--orange button[type="submit"] {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: #ff7a00; /* Primary Orange */
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+.quote-card--orange button[type="submit"]:hover {
+  background-color: #e66f00; /* Slightly darker orange on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(255, 122, 0, 0.4);
+}
 
 /* ===== FOOTER ===== */
 .footer {
@@ -503,4 +624,3 @@ body {
     font-size: 1.1rem;
   }
 }
-  
