@@ -4,14 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>All Build Construction</title>
-  <link rel="stylesheet" href="css/main.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/main.css">
 </head>
-
 <body>
-  <!-- ===== SITE HEADER ===== -->
+  <!-- SITE HEADER -->
   <header class="site-header" role="banner">
-    <!-- Top strip -->
+    <!-- Top strip with phone/email and small CTAs -->
     <div class="top-strip">
       <div class="container">
         <div class="top-left">
@@ -19,35 +17,36 @@
           <span class="brand-name">All Build Construction</span>
         </div>
         <div class="top-right">
-          <a href="tel:+27610734387" class="top-link" aria-label="Call All Build">061 073 4387</a>
-          <a href="mailto:admin@allbuildconstruction.co.za" class="top-link">admin@allbuildconstruction.co.za</a>
-          <a href="https://wa.me/27610734387" class="top-link" target="_blank">
-            <i class="fab fa-whatsapp"></i> WhatsApp
-          </a>
+          <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
+          <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
+         <a href="https://wa.me/27610734387" target="_blank">
+  <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
         </div>
       </div>
     </div>
 
-    <!-- Navigation -->
+    <!-- Main nav area -->
     <div class="nav-wrap">
       <div class="container nav-container">
-        <!-- Logo -->
+        <!-- Logo / brand -->
         <a class="logo" href="#">
-          <div class="logo-mark">AB</div>
+          <div class="logo-mark" aria-hidden="true">AB</div>
           <div class="logo-text">
             <div class="company">All Build</div>
             <div class="tag">Construction</div>
           </div>
         </a>
 
-        <!-- Mobile menu toggle -->
-        <input id="nav-toggle" class="nav-toggle" type="checkbox" />
-        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+        <!-- Mobile menu toggle (checkbox hack) -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-burger" aria-hidden="false" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </label>
 
-        <!-- Menu -->
-        <nav class="main-nav">
+        <!-- Navigation -->
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="housing.html">Housing</a></li>
@@ -59,14 +58,17 @@
           </ul>
         </nav>
 
-        <!-- CTA -->
+        <!-- Right side actions -->
         <div class="nav-cta">
-          <a class="phone" href="tel:+27610734387">061 073 4387</a>
+          <a class="phone" href="tel:+27610734387" aria-label="Call 061 073 4387">061 073 4387</a>
           <a class="btn primary" href="#get-quote">Get Quote</a>
         </div>
       </div>
     </div>
   </header>
+     <div id="time">
+        <time></time>
+      </div>
 
   <!-- ===== TIME DISPLAY ===== -->
   <div id="time-container">
@@ -154,6 +156,10 @@
         <p><i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street, Pretoria Central,<br> Gauteng, South Africa</p>
       </div>
     </div>
+    
+     <script src="js/main.js"></script>   
+    
+  </footer>
 
     <div class="footer-bottom">
       <p>&copy; 2025 All Build Construction | All rights reserved.</p>
