@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>All Build Construction</title>
+  <title>All Build Construction | Road Construction</title>
   <link rel="stylesheet" href="css/main.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- SITE HEADER -->
   <header class="site-header" role="banner">
@@ -19,10 +21,9 @@
         <div class="top-right">
           <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
           <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
-         <a href="https://wa.me/27610734387" target="_blank">
-  <i class="fab fa-whatsapp"></i> WhatsApp
-</a>
-
+          <a href="https://wa.me/27610734387" target="_blank" aria-label="Chat on WhatsApp">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
         </div>
       </div>
     </div>
@@ -31,7 +32,7 @@
     <div class="nav-wrap">
       <div class="container nav-container">
         <!-- Logo / brand -->
-        <a class="logo" href="#">
+        <a class="logo" href="index.html">
           <div class="logo-mark" aria-hidden="true">AB</div>
           <div class="logo-text">
             <div class="company">All Build</div>
@@ -41,7 +42,7 @@
 
         <!-- Mobile menu toggle (checkbox hack) -->
         <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
-        <label for="nav-toggle" class="nav-burger" aria-hidden="false" aria-label="Toggle menu">
+        <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </label>
 
@@ -50,7 +51,7 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="housing.html">Housing</a></li>
-            <li><a href="roads.html">Roads</a></li>
+            <li><a href="roads.html" class="active">Roads</a></li>
             <li><a href="security-walls.html">Security Walls</a></li>
             <li><a href="industrial.html">Industrial</a></li>
             <li><a href="corprate.html">Corporate</a></li>
@@ -66,62 +67,65 @@
       </div>
     </div>
   </header>
-     <div id="time">
-        <time></time>
+
+  <!-- Live Time Section -->
+  <div id="time">
+    <time></time>
+  </div>
+
+  <!-- HERO SECTION -->
+  <div class="services-hero roads-hero">
+    <div class="hero-overlay"></div>
+    <div class="services-hero-text">
+      <h1>Road Construction</h1>
+      <p>Professional road construction and infrastructure development services</p>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <section class="overview">
+      <h2>Our Road Construction Expertise</h2>
+      <p>
+        At All Build Construction, we excel in civil engineering projects,
+        including new road construction, paving, patching, and comprehensive
+        drainage systems. Our commitment to quality ensures that we adhere to
+        national road safety standards.
+      </p>
+    </section>
+
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-gallery">
+        <img src="images/FB_IMG_17604758493859050.jpg" alt="Road Project 1" width="300" height="300" />
+        <img src="images/FB_IMG_17604758295154891.jpg" alt="Road Project 2" width="300" height="300" />
+        <img src="images/FB_IMG_17604757848529669.jpg" alt="Road Project 3" width="300" height="300" />
+        <img src="images/road-construction.jpg" alt="Road Project 4" width="300" height="300" />
       </div>
-<body>
+    </section>
 
-    
+    <section class="lead-capture" id="get-quote">
+      <h2>Get a Quote for Your Road Project</h2>
+      <div class="quote-card quote-card--orange">
+        <form action="https://formspree.io/f/{your-form-endpoint}" method="POST">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required />
 
-    <!-- Main Content -->
-    <main>
-    <section class="hero" 
-    <div style="background-image: url('FB_IMG_17604757848529669.jpg');">
-                <h1>Road Construction </h1>
-            
-                <p>Professional road construction and infrastructure development services.</p>
-            </div>
-        </section>
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required />
 
-        <section class="overview">
-            <h2>Our Road Construction Expertise</h2>
-            <p>At All Build Construction, we excel in civil engineering projects, including new road construction, paving, patching, and comprehensive drainage systems. Our commitment to quality ensures that we adhere to national road safety standards.</p>
-        </section>
+          <label for="project-details">Project Details *</label>
+          <textarea id="project-details" name="project-details" required></textarea>
 
-        <section class="projects">
-            <h2>Featured Projects</h2>
-            <div class="project-gallery">
-                <img src="FB_IMG_17604758493859050.jpg" alt="Road Project 1" width="300" height="300">
-                <img src="FB_IMG_17604758295154891.jpg" alt="Road Project 2" width="300" height="300">
-                <img src="FB_IMG_17604757848529669.jpg" alt="Road Project 3" width="300" height="300">
-                <img src="FB_IMG_17604757523842804.jpg" alt="Road Project 4" width="300" height="300">
-            </div>
-        </section>
+          <button type="submit">Submit Inquiry</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
-        <section class="lead-capture">
-            <h2>Get a Quote for Your Road Project</h2>
-            <div class="quote-card quote-card--orange">
-                <form action="https://formspree.io/f/{your-form-endpoint}" method="POST">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="project-details">Project Details *</label>
-                    <textarea id="project-details" name="project-details" required></textarea>
-
-                    <button type="submit">Submit Inquiry</button>
-                </form>
-            </div>
-        </section>
-    </main>
-
-  <!-- ===== FOOTER SECTION ===== -->
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-container">
-      
-      <!-- COMPANY INFO -->
       <div class="footer-section">
         <h2>All Build <span>Construction</span></h2>
         <p>
@@ -129,7 +133,6 @@
         </p>
       </div>
 
-      <!-- QUICK LINKS -->
       <div class="footer-section">
         <h3>Quick Links</h3>
         <ul>
@@ -137,16 +140,13 @@
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="contact.html">Get a Quote</a></li>
           <li><a href="security-walls.html">Security Walls</a></li>
-            <li><a href="road-construction.html">Road Construction</a></li>
-            <li><a href="housing-construction.html">Housing Construction</a></li>
-            <li><a href="industrial-structures.html">Industrial Structures</a></li>
-            <li><a href="corporate-buildings.html">Corporate Buildings</a></li>
-            
-
+          <li><a href="roads.html">Road Construction</a></li>
+          <li><a href="housing.html">Housing Construction</a></li>
+          <li><a href="industrial.html">Industrial Structures</a></li>
+          <li><a href="corprate.html">Corporate Buildings</a></li>
         </ul>
       </div>
 
-      <!-- SERVICES -->
       <div class="footer-section">
         <h3>Our Services</h3>
         <ul>
@@ -158,7 +158,6 @@
         </ul>
       </div>
 
-      <!-- CONTACT INFO -->
       <div class="footer-section">
         <h3>Contact Us</h3>
         <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
@@ -166,23 +165,16 @@
         <p><i class="fas fa-envelope"></i> <a href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a></p>
         <p><i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street, Pretoria Central,<br> Gauteng, South Africa</p>
       </div>
-
     </div>
 
-    <!-- COPYRIGHT BAR -->
     <div class="footer-bottom">
       <p>&copy; 2025 All Build Construction | All rights reserved.</p>
       <div>
-        <p>
-           This site was designed and is maintained by Daimond Pinnacle IT Solutions. 
-        </p>
+        <p>This site was designed and is maintained by Diamond Pinnacle IT Solutions.</p>
       </div>
     </div>
-    
-     <script src="js/main.js"></script>   
-    
   </footer>
 
+  <script src="js/main.js"></script>
 </body>
 </html>
-  

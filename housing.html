@@ -1,141 +1,192 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>All Build Construction</title>
-  <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-  <!-- SITE HEADER -->
-  <header class="site-header" role="banner">
-    <!-- Top strip with phone/email and small CTAs -->
-    <div class="top-strip">
-      <div class="container">
-        <div class="top-left">
-          <span class="brand-ab">AB</span>
-          <span class="brand-name">All Build Construction</span>
-        </div>
-        <div class="top-right">
-          <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
-          <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
-         <a href="https://wa.me/27610734387" target="_blank">
-  <i class="fab fa-whatsapp"></i> WhatsApp
-</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Build Construction | Housing</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://kit.fontawesome.com/584509c2ad.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
+  <body>
+    <!-- ===== SITE HEADER ===== -->
+    <header class="site-header" role="banner">
+      <!-- Top strip -->
+      <div class="top-strip">
+        <div class="container">
+          <div class="top-left">
+            <span class="brand-ab">AB</span>
+            <span class="brand-name">All Build Construction</span>
+          </div>
+          <div class="top-right">
+            <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
+            <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
+            <a href="https://wa.me/27610734387" target="_blank">
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+          </div>
         </div>
+      </div>
+
+      <!-- Navigation -->
+      <div class="nav-wrap">
+        <div class="container nav-container">
+          <!-- Logo -->
+          <a class="logo" href="#">
+            <div class="logo-mark" aria-hidden="true">AB</div>
+            <div class="logo-text">
+              <div class="company">All Build</div>
+              <div class="tag">Construction</div>
+            </div>
+          </a>
+
+          <!-- Mobile toggle -->
+          <input id="nav-toggle" class="nav-toggle" type="checkbox" />
+          <label for="nav-toggle" class="nav-burger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+          </label>
+
+          <!-- Menu links -->
+          <nav class="main-nav" role="navigation" aria-label="Main navigation">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="housing.html">Housing</a></li>
+              <li><a href="roads.html">Roads</a></li>
+              <li><a href="security-walls.html">Security Walls</a></li>
+              <li><a href="industrial.html">Industrial</a></li>
+              <li><a href="corprate.html">Corporate</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+
+          <!-- Right side buttons -->
+          <div class="nav-cta">
+            <a class="phone" href="tel:+27610734387">061 073 4387</a>
+            <a class="btn primary" href="#get-quote">Get Quote</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Optional live time -->
+    <div id="time">
+      <time></time>
+    </div>
+
+    <!-- ===== HERO SECTION ===== -->
+    <div class="services-hero housing-hero">
+      <div class="hero-overlay"></div>
+      <div class="services-hero-text">
+        <h1>Housing Construction</h1>
+        <p>Quality residential construction services for home and housing developments</p>
       </div>
     </div>
 
-    <!-- Main nav area -->
-    <div class="nav-wrap">
-      <div class="container nav-container">
-        <!-- Logo / brand -->
-        <a class="logo" href="#">
-          <div class="logo-mark" aria-hidden="true">AB</div>
-          <div class="logo-text">
-            <div class="company">All Build</div>
-            <div class="tag">Construction</div>
-          </div>
-        </a>
+    <!-- ===== MAIN CONTENT ===== -->
+    <main>
+      <section class="projects">
+        <h2>Featured Projects</h2>
+        <div class="project-gallery">
+          <img src="images/house1.jpg" alt="Housing Project 1" width="300" height="300" />
+          <img src="images/house2.jpg" alt="Housing Project 2" width="300" height="300" />
+          <img src="images/house3.jpg" alt="Housing Project 3" width="300" height="300" />
+          <img src="images/house4.jpg" alt="Housing Project 4" width="300" height="300" />
+        </div>
+      </section>
 
-        <!-- Mobile menu toggle (checkbox hack) -->
-        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
-        <label for="nav-toggle" class="nav-burger" aria-hidden="false" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </label>
+      <section class="services-overview">
+        <h2>Housing Construction Services</h2>
+        <p>
+          Our approach to housing construction focuses on functionality,
+          comfort, and aesthetic appeal. Whether it’s a single-family home,
+          townhouse, or multi-unit development, we ensure that every project
+          reflects our clients’ lifestyle, budget, and expectations. From
+          concept to completion, we provide a seamless construction experience
+          — handling every stage of the process with precision and professionalism.
+        </p>
+      </section>
 
-        <!-- Navigation -->
-        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+      <section class="capabilities">
+        <h2>Capabilities</h2>
+        <ul>
+          <li><strong>Home Renovations & Extensions:</strong> Transform your existing home into a modern, more functional space.</li>
+          <li><strong>New Home Construction:</strong> We work with architects and engineers to ensure every detail meets the highest standards.</li>
+          <li><strong>Affordable Housing Development:</strong> Energy-efficient, code-compliant, and sustainable housing for families and communities.</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- COMPANY INFO -->
+        <div class="footer-section">
+          <h2>All Build <span>Construction</span></h2>
+          <p>
+            Professional construction services for residential, commercial, and
+            industrial projects across South Africa.
+          </p>
+        </div>
+
+        <!-- QUICK LINKS -->
+        <div class="footer-section">
+          <h3>Quick Links</h3>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="housing.html">Housing</a></li>
-            <li><a href="roads.html">Roads</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="contact.html">Get a Quote</a></li>
             <li><a href="security-walls.html">Security Walls</a></li>
-            <li><a href="industrial.html">Industrial</a></li>
-            <li><a href="corprate.html">Corporate</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Right side actions -->
-        <div class="nav-cta">
-          <a class="phone" href="tel:+27610734387" aria-label="Call 061 073 4387">061 073 4387</a>
-          <a class="btn primary" href="#get-quote">Get Quote</a>
-        </div>
-      </div>
-    </div>
-  </header>
-     <div id="time">
-        <time></time>
-      </div>
-<body>
-
-  <!-- ===== FOOTER SECTION ===== -->
-  <footer class="footer">
-    <div class="footer-container">
-      
-      <!-- COMPANY INFO -->
-      <div class="footer-section">
-        <h2>All Build <span>Construction</span></h2>
-        <p>
-          Professional construction services for residential, commercial, and industrial projects across South Africa.
-        </p>
-      </div>
-
-      <!-- QUICK LINKS -->
-      <div class="footer-section">
-        <h3>Quick Links</h3>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="contact.html">Get a Quote</a></li>
-          <li><a href="security-walls.html">Security Walls</a></li>
             <li><a href="road-construction.html">Road Construction</a></li>
             <li><a href="housing-construction.html">Housing Construction</a></li>
             <li><a href="industrial-structures.html">Industrial Structures</a></li>
             <li><a href="corporate-buildings.html">Corporate Buildings</a></li>
-            
+          </ul>
+        </div>
 
-        </ul>
+        <!-- SERVICES -->
+        <div class="footer-section">
+          <h3>Our Services</h3>
+          <ul>
+            <li><a href="housing.html">Housing Construction</a></li>
+            <li><a href="roads.html">Road Construction</a></li>
+            <li><a href="security-walls.html">Security Walls</a></li>
+            <li><a href="industrial.html">Industrial Structures</a></li>
+            <li><a href="corprate.html">Corporate Buildings</a></li>
+          </ul>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
+          <p>
+            <i class="fab fa-whatsapp"></i>
+            <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a>
+          </p>
+          <p>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
+          </p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street,
+            Pretoria Central, Gauteng, South Africa
+          </p>
+        </div>
       </div>
 
-      <!-- SERVICES -->
-      <div class="footer-section">
-        <h3>Our Services</h3>
-        <ul>
-          <li><a href="housing.html">Housing Construction</a></li>
-          <li><a href="roads.html">Road Construction</a></li>
-          <li><a href="security-walls.html">Security Walls</a></li>
-          <li><a href="industrial.html">Industrial Structures</a></li>
-          <li><a href="corprate.html">Corporate Buildings</a></li>
-        </ul>
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 All Build Construction | All rights reserved.</p>
+        <div>
+          <p>
+            This site was designed and is maintained by Daimond Pinnacle IT
+            Solutions.
+          </p>
+        </div>
       </div>
-
-      <!-- CONTACT INFO -->
-      <div class="footer-section">
-        <h3>Contact Us</h3>
-        <p><i class="fas fa-phone-alt"></i> 061 073 4387 / +27 61 073 4387</p>
-        <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/27610734387" target="_blank">WhatsApp</a></p>
-        <p><i class="fas fa-envelope"></i> <a href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a></p>
-        <p><i class="fas fa-map-marker-alt"></i> 210 Thabo Sehume Street, Pretoria Central,<br> Gauteng, South Africa</p>
-      </div>
-
-    </div>
-
-    <!-- COPYRIGHT BAR -->
-    <div class="footer-bottom">
-      <p>&copy; 2025 All Build Construction | All rights reserved.</p>
-      <div>
-        <p>
-           This site was designed and is maintained by Daimond Pinnacle IT Solutions. 
-        </p>
-      </div>
-    </div>
-    
-        
-    
-  </footer>
-
-</body>
+    </footer>
+  </body>
 </html>
