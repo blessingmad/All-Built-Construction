@@ -113,7 +113,8 @@ body {
   margin-bottom: 50px;
 }
 
-.our-services h2 {
+.our-services h1,
+.why-choose-us h1 {
   color: var(--primary-orange-color);
   text-align: center;
 }
@@ -127,6 +128,7 @@ body {
 .service img {
   object-fit: cover;
   width: 100%;
+  border-radius: 5px;
 }
 
 .service h3 {
@@ -152,6 +154,36 @@ body {
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+}
+/* Why choose Us section */
+.all-reasons {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+.reason {
+  margin-top: 10px;
+  box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+    rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+    rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+    rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+    rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+    rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.reason h3 {
+  text-align: center;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.reason p {
+  text-align: center;
+  padding-top: 0px;
+  margin-top: 0;
 }
 
 /* For tablets */
@@ -250,5 +282,10 @@ body {
 
   .all-services {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .reason {
+    width: 300px;
+    margin: 0 auto;
   }
 }
