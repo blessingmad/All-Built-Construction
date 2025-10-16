@@ -218,6 +218,8 @@ section h1 {
   padding-top: 100px;
 }
 
+
+
 /* For tablets */
 @media (max-width: 1024px) {
   .extras {
@@ -345,6 +347,67 @@ body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* --- Quote Card Styling (The requested orange section) --- */
+        .quote-card {
+            padding: 2.5rem;
+            border-radius: 1rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transition: all 0.3s ease;
+        }
+        
+        .quote-card--orange {
+            background-color: #fff;
+            border: 3px solid #FF7A00; /* Orange Border */
+        }
+        .quote-card--orange h2 {
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem; /* text-4xl */
+        }
+        .quote-card--orange label {
+            display: block;
+            margin-top: 1rem;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+            color: #4b5563;
+        }
+        .quote-card--orange input[type="text"], 
+        .quote-card--orange input[type="email"], 
+        .quote-card--orange textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            outline: none;
+        }
+        /* Orange focus style for inputs/textarea */
+        .quote-card--orange input:focus, 
+        .quote-card--orange textarea:focus {
+            border-color: #FF7A00; 
+            box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25); /* Orange glow effect */
+        }
+        /* Orange submit button */
+        .quote-card--orange button[type="submit"] {
+            margin-top: 2rem;
+            width: 100%;
+            padding: 1rem;
+            background-color: #FF7A00; /* Primary Orange */
+            color: white;
+            font-weight: 700;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.1s;
+        }
+        .quote-card--orange button[type="submit"]:hover {
+            background-color: #E66F00; /* Slightly darker orange on hover */
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(255, 122, 0, 0.4);
+        }
+        
+
 
 /* ===== FOOTER ===== */
 .footer {
