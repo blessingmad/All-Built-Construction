@@ -624,3 +624,125 @@ body {
     font-size: 1.1rem;
   }
 }
+
+/* ===== Contact Form ===== */
+.contact-form {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 1rem;
+  max-width: 700px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form form div {
+  margin-bottom: 1rem;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="tel"],
+.contact-form input[type="email"],
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus,
+.contact-form select:focus {
+  border-color: var(--primary-orange-color);
+  box-shadow: 0 0 0 3px rgba(255, 140, 66, 0.2);
+}
+
+.contact-form input[type="checkbox"] {
+  width: auto;
+  margin-right: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+  background-color: var(--primary-orange-color);
+  color: #fff;
+  padding: 1rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+.contact-form button[type="submit"]:hover {
+  background-color: #e66f00;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(255, 140, 66, 0.4);
+}
+
+#form-status {
+  margin-top: 1rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* ===== Map Section ===== */
+.map {
+  margin: 3rem 0;
+  text-align: center;
+}
+
+.map iframe {
+  width: 100%;
+  max-width: 800px;
+  height: 450px;
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="tel"],
+  .contact-form input[type="email"],
+  .contact-form select,
+  .contact-form textarea {
+    font-size: 0.95rem;
+  }
+
+  .map iframe {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  section h1,
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    padding: 1rem;
+  }
+
+  .contact-form button[type="submit"] {
+    padding: 0.85rem 1rem;
+  }
+
+  .map iframe {
+    height: 250px;
+  }
+}
