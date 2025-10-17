@@ -749,10 +749,11 @@ body {
     left: 0;
     top: 20px;
     padding-left: 0px;
-    background-color: black;
+    /* background-color: black; */
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     /* transition: 0.5s; */
+    z-index: 3;
   }
 
   .mobile-menu {
