@@ -1,23 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All Build Construction</title>
-    <script
-      src="https://kit.fontawesome.com/584509c2ad.js"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <div class="services-hero industrial-hero">
-      <div class="hero-overlay"></div>
-      <div class="services-hero-text">
-        <h1>Industrial Construction</h1>
-        <p>Specialized construction for industrial facilities and warehouses</p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>All Build Construction</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- SITE HEADER -->
+  <header class="site-header" role="banner">
+    <!-- Top strip with phone/email and small CTAs -->
+    <div class="top-strip">
+      <div class="container">
+        <div class="top-left">
+          <span class="brand-ab">AB</span>
+          <span class="brand-name">All Build Construction</span>
+        </div>
+        <div class="top-right">
+          <a class="top-link" href="tel:+27610734387" aria-label="Call All Build">061 073 4387</a>
+          <a class="top-link" href="mailto:admin@allbuildconstruction.co.za">admin@allbuildconstruction.co.za</a>
+         <a href="https://wa.me/27610734387" target="_blank">
+  <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+
+        </div>
       </div>
     </div>
+
+    <!-- Main nav area -->
+    <div class="nav-wrap">
+      <div class="container nav-container">
+        <!-- Logo / brand -->
+        <a class="logo" href="#">
+          <div class="logo-mark" aria-hidden="true">AB</div>
+          <div class="logo-text">
+            <div class="company">All Build</div>
+            <div class="tag">Construction</div>
+          </div>
+        </a>
+
+        <!-- Mobile menu toggle (checkbox hack) -->
+        <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+        <label for="nav-toggle" class="nav-burger" aria-hidden="false" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <!-- Navigation -->
+        <nav class="main-nav" role="navigation" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="housing.html">Housing</a></li>
+            <li><a href="roads.html">Roads</a></li>
+            <li><a href="security-walls.html">Security Walls</a></li>
+            <li><a href="industrial.html">Industrial</a></li>
+            <li><a href="corprate.html">Corporate</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Right side actions -->
+        <div class="nav-cta">
+          <a class="phone" href="tel:+27610734387" aria-label="Call 061 073 4387">061 073 4387</a>
+          <a class="btn primary" href="#get-quote">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </header>
+     <div id="time">
+        <time></time>
+      </div>
+<body>
+
+
+<main>
+        <section class="hero">
+            <div class="hero-card">
+                <h1>Industrial Structures</h1>
+                <p>From factories to logistics hubs, we build for industrial scale and performance.</p>
+            </div>
+        </section>
+
+        <section class="overview">
+            <h2>Our Industrial Construction Services</h2>
+            <p>We understand the unique demands of industrial construction: high load-bearing floors, large spans, and fast construction timelines. We deliver robust warehouses, manufacturing plants, and processing facilities.</p>
+        </section>
+
+<section class="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-gallery">
+                <img src="images/FB_IMG_17605219617127941.jpg" alt="industrial Project 1"  width="300" height="300">
+                <img src="images/FB_IMG_17605219581162949.jpg" alt="Road Project 2" width="300" height="300">
+                <img src="images/FB_IMG_17605219407628200.jpg" alt="Road Project 3" width="300" height="300">
+            </div>
+        </section>
+
+
+        <section class="capabilities">
+            <h2>Capabilities</h2>
+            <ul>
+                <li><strong>Steel Structures:</strong> Design and erection of large-span steel frameworks.</li>
+                <li><strong>Heavy-Duty Flooring:</strong> Specialised concrete flooring for forklift traffic and heavy machinery.</li>
+                <li><strong>Utility Infrastructure:</strong> Integration of high-capacity electrical, ventilation, and plumbing systems.</li>
+            </ul>
+        </section>
+
+        <section class="process">
+            <h2>Typical Construction Process</h2>
+            <ol>
+                <li>Structural Design & Engineering</li>
+                <li>Frame Erection</li>
+                <li>Cladding & Roofing</li>
+                <li>Fit-out & Commissioning</li>
+            </ol>
+        </section>
+
+        <section class="lead-capture">
+            <div class="quote-card quote-card--orange">
+                <h2>Request a Quote</h2>
+                <form action="https://formspree.io/f/{your-form-endpoint}" method="POST">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="message">Project Details *</label>
+                    <textarea id="message" name="message" required></textarea>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <main>
       <section class="projects">
@@ -68,8 +182,13 @@
         </ul>
       </section>
 
-      <section class="process">
-        <h2>Typical Construction Process</h2>
+  <!--footer-->
+  <footer class="footer">
+    <div class="footer-container">
+      
+      <!-- COMPANY INFO -->
+      <div class="footer-section">
+        <h2>All Build <span>Construction</span></h2>
         <p>
           <span class="step">Structural Design & Engineering</span
           ><span>

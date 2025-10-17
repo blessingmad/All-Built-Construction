@@ -8,62 +8,6 @@ body {
   margin: 0;
 }
 
-/*For the nav */
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-}
-
-.company-name {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: var(--primary-orange-color);
-}
-
-.page-sections {
-  display: flex;
-  gap: 20px;
-}
-
-.page-sections a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.extras {
-  display: flex;
-  gap: 20px;
-}
-
-.hambburger {
-  display: none;
-}
-
-.search-input {
-  display: none;
-}
-
-.order-button {
-  background-color: var(--primary-orange-color);
-  padding: 5px;
-  border-radius: 2px;
-}
-
-.order-button:hover {
-  box-shadow: 2px 2px 4px #000000;
-  cursor: pointer;
-}
-
-.search-button {
-  cursor: pointer;
-}
-
-.mobile-nav {
-  display: none;
-}
-
 /* Hero */
 .hero {
   background-image: url("../images/Free\ Construction\ Planning\ Session\ Image\ _\ Download\ at\ StockCake.jpg");
@@ -106,7 +50,6 @@ body {
 }
 
 /* Services */
-
 .our-services {
   padding: 50px;
 }
@@ -158,6 +101,7 @@ section h1 {
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
 }
+
 /* Why choose Us section */
 .all-reasons {
   display: grid;
@@ -196,7 +140,6 @@ section h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
-  /* gap: 10px; */
   padding-bottom: 200px;
   overflow: hidden;
 }
@@ -339,10 +282,6 @@ section ul {
 
 /* For tablets */
 @media (max-width: 1024px) {
-  .extras {
-    display: none;
-  }
-
   .hero-text {
     padding-top: 50px;
   }
@@ -375,63 +314,6 @@ section ul {
 
 /* For mobile phones */
 @media (max-width: 668px) {
-  .page-sections {
-    display: none;
-  }
-
-  .hambburger {
-    display: block;
-    font-weight: bold;
-  }
-
-  /* For mobile navigation bar */
-  .mobile-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 20px;
-    padding-left: 0px;
-    background-color: black;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    /* transition: 0.5s; */
-  }
-
-  .mobile-menu {
-    position: relative;
-    top: 15%;
-    width: 100%;
-    text-align: center;
-    /* margin-top: 10px; */
-  }
-
-  .mobile-menu a {
-    padding: 8px;
-    text-decoration: none;
-    color: inherit;
-    font-size: 26px;
-    /* color: var(--primary-orange-color); */
-    display: block;
-    transition: 0.3s;
-  }
-
-  .mobile-menu a:hover {
-    color: grey;
-  }
-
-  .mobile-nav .close-button {
-    position: absolute;
-    top: 50px;
-    /* right: 15px; */
-    font-size: 40px;
-    text-decoration: none;
-    color: inherit;
-    text-align: center;
-    align-items: center;
-  }
-
   .hero {
     height: auto;
   }
@@ -454,7 +336,6 @@ section ul {
   }
 
   .card {
-    /* width: 100%; */
     height: auto;
     margin: 0 auto;
     grid-template-columns: auto;
@@ -465,6 +346,7 @@ section ul {
     display: none;
   }
 }
+
 body {
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -495,6 +377,7 @@ body {
   font-weight: 600;
   color: #4b5563;
 }
+
 .quote-card--orange input[type="text"],
 .quote-card--orange input[type="email"],
 .quote-card--orange textarea {
@@ -505,18 +388,18 @@ body {
   transition: border-color 0.3s, box-shadow 0.3s;
   outline: none;
 }
-/* Orange focus style for inputs/textarea */
+
 .quote-card--orange input:focus,
 .quote-card--orange textarea:focus {
   border-color: #ff7a00;
-  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25); /* Orange glow effect */
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.25);
 }
-/* Orange submit button */
+
 .quote-card--orange button[type="submit"] {
   margin-top: 2rem;
   width: 100%;
   padding: 1rem;
-  background-color: #ff7a00; /* Primary Orange */
+  background-color: #ff7a00;
   color: white;
   font-weight: 700;
   border: none;
@@ -524,8 +407,9 @@ body {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
 }
+
 .quote-card--orange button[type="submit"]:hover {
-  background-color: #e66f00; /* Slightly darker orange on hover */
+  background-color: #e66f00;
   transform: translateY(-2px);
   box-shadow: 0 4px 6px rgba(255, 122, 0, 0.4);
 }
